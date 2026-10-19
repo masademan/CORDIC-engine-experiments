@@ -229,18 +229,23 @@ def test_arc_trig_funcs(
 
 
 if __name__ == "__main__":
+    max_error = 0.1
+    # max_error = 0.01
     # max_error = 0.001
-    max_error = 0.01
     print_test_status = False
 
-    refinements = 15              # max_err = 0.01
-    units_of_precision = 5        # max_err = 0.01
+    refinements = 12              # max_err = 0.1
+    units_of_precision = 4        # max_err = 0.1
+    # refinements = 15              # max_err = 0.01
+    # units_of_precision = 5        # max_err = 0.01
     # refinements = 28              # max_err = 0.001
     # units_of_precision = 6        # max_err = 0.001
 
     refinements_trig = refinements
     units_of_precision_trig = units_of_precision
-    # refinements_trig = 9                # min for trig (max_err = 0.01)
+    # refinements_trig = 5                 # min for trig (max_err = 0.1)
+    # units_of_precision_trig = 3          # min for trig (max_err = 0.1)
+    # refinements_trig = 9                 # min for trig (max_err = 0.01)
     # units_of_precision_trig = 3          # min for trig (max_err = 0.01)
     # refinements_trig = 21                # min for trig (max_err = 0.001)
     # units_of_precision_trig = 4          # min for trig (max_err = 0.001)
@@ -262,10 +267,12 @@ if __name__ == "__main__":
         print_test_status=print_test_status,
     )
 
-    print()
+    # print()
 
     refinements_arctrig = refinements
     units_of_precision_arctrig = units_of_precision
+    # refinements_arctrig = 12              # min for arctrig (max_err = 0.1)
+    # units_of_precision_arctrig = 4        # min for arctrig (max_err = 0.1)
     # refinements_arctrig = 15              # min for arctrig (max_err = 0.01)
     # units_of_precision_arctrig = 5        # min for arctrig (max_err = 0.01)
     # refinements_arctrig = 28              # min for arctrig (max_err = 0.001)
